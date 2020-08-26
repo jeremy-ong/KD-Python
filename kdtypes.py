@@ -28,7 +28,7 @@ class KiDate():
 	dateFormat (str): A strptime format string. Defaults to '%Y/%m/%d'.
 
 	Attributes:
-	date: a Date object of the supplied date.
+	date_: a Date object of the supplied date.
 	"""
 	def __init__(self, date_, dateFormat='%Y-%m-%d'):
 		self.date_ = datetime.strptime(date_, dateFormat).date()
